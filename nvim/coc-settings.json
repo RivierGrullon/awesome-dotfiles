@@ -1,0 +1,20 @@
+{
+        "suggest.echodocSupport": true,
+        "suggest.maxCompleteItemCount": 20,
+        "suggest.noselect": false,
+        "prettier.formatterPriority": 1,
+        "prettier.arrowParens": "avoid",
+        "coc.preferences.formatOnSaveFiletypes": [
+                "markdown",
+                "html",
+                "css",
+                "python",
+                "php",
+		"typescript",
+		"go"
+        ],
+        "diagnostic.displayByAle": true,
+        "diagnostic.errorSign": "✕",
+        "diagnostic.warningSign": "⚠",
+        "diagnostic.infoSign": "•"
+}

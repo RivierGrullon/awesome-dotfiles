@@ -24,6 +24,9 @@ local tags = {
       icon = dir .. "terminal.png",
    },
    {
+      icon = dir .. "dev.png",
+   },
+   {
       icon = dir .. "firefox.png",
    },
    {
@@ -40,13 +43,8 @@ local tags = {
    },
    {
       icon = dir .. "star.png",
-   },
-   {
-      icon = dir .. "mail.png",
-   },
-   {
-      icon = dir .. "spotify.png",
    }
+
 }
 
 return tags

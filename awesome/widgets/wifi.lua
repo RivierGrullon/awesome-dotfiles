@@ -93,7 +93,7 @@ local function grab_text()
    end
 end
 
-watch('awk "NR==3 {printf \"%3.0f\" ,($3/70)*100}" /proc/net/wireless', 5,
+watch('awk "{printf "%.3f" ,($3/70)*100}" /proc/net/wireless', 5,
    function(_, stdout)
       local widget_icon_name = "wifi-strength"
       local wifi_strength = tonumber(stdout)

@@ -145,6 +145,12 @@ keys.globalkeys = gears.table.join(
       end,
       {description = "open a terminal", group = "launcher"}
    ),
+   awful.key({modkey}, "b",
+      function()
+         awful.spawn(apps.browser)
+      end,
+      {description = "open a the browser", group = "launcher"}
+   ),
    -- launch rofi
    awful.key({modkey}, "d",
       function()
@@ -158,7 +164,7 @@ keys.globalkeys = gears.table.join(
    -- =========================================
 
    -- Brightness
-   awful.key({}, "XF86MonBrightnessUp",
+   awful.key({modkey}, "XF86MonBrightnessUp",
       function()
          awful.spawn("xbacklight -inc 10", false)
       end,
@@ -213,7 +219,7 @@ keys.globalkeys = gears.table.join(
    ),
 
    -- Screenshot on prtscn using scrot
-   awful.key({}, "Print",
+   awful.key({"Control"}, "Print",
       function()
          awful.util.spawn(apps.screenshot, false)
       end

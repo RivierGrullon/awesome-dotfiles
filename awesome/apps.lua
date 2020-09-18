@@ -25,18 +25,20 @@ local apps = {}
 
 -- define default apps
 apps.default = {
-   terminal = "alacritty",
+   terminal = "konsole",
    launcher = "rofi -normal-window -modi drun -show drun",
    lock = "i3lock",
    screenshot = "scrot -e 'mv $f ~/Pictures/ 2>/dev/null'",
-   filebrowser = "nautilus"
+   filebrowser = "thunar",
+   browser = "opera"
 }
 
 -- List of apps to start once on start-up
 local run_on_start_up = {
    "picom",
    "redshift",
-   "unclutter"
+   "unclutter",
+   "nm-applet"
 }
 
 
